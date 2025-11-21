@@ -118,10 +118,26 @@ button:hover {
   color: #dc2626;
 }
 
-/* Rodapé */
 .footer {
-  padding: 14px 24px 20px;
-  text-align: center;
+  padding: 20px 24px 28px;
+  text-align: center;          /* centraliza tudo */
   font-size: 0.8rem;
   color: #6b7280;
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+  margin-top: 40px;            /* espaço extra antes do rodapé */
+}
+
+/* Nome da empresa destacado */
+.footer-signature {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #e5e7eb;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer-signature span {
+  color: #38bdf8;              /* destaca “Solutions” */
+}
 }
