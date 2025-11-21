@@ -43,3 +43,14 @@ p {
 .btn:hover {
   background: #1d4ed8;
 }
+.section {
+  margin-top: 56px;    
+}
+
+.hero {
+  gap: 32px;             
+}
+
+.grid {
+  gap: 24px;             
+}
