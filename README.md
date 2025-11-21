@@ -1,4 +1,4 @@
-# Web Portfolio – Projetos HTML, CSS e JavaScript
+Projetos HTML, CSS e JavaScript
 
 Repositório de estudos de front-end com pequenos projetos usando **HTML**, **CSS** e **JavaScript**.
 Os projetos são fictícios e fazem parte do meu portfólio.
