@@ -1,75 +1,129 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Fundo e fonte geral */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #f3f4f6;
+  color: #111827;
+  min-height: 100vh;
 }
 
-.container {
-  max-width: 400px;
-  margin: 60px auto;
+/* Centraliza o conteúdo na tela */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Container do formulário */
+.container {
+  width: 100%;
+  max-width: 460px;
+}
+
+/* Card do formulário */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 26px 30px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+  border: 1px solid #e5e7eb;
+}
+
+/* Título e texto acima do card */
 h1 {
   margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 1.6rem;
+  margin-bottom: 6px;
+  font-size: 1.8rem;
 }
 
-p {
+.container > p {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   color: #4b5563;
+  font-size: 0.95rem;
 }
 
+/* Layout do formulário */
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+}
+
+/* Campos com mais espaçamento */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
 }
 
 label {
   font-size: 0.9rem;
   font-weight: 500;
+  color: #111827;
 }
 
 input,
 textarea {
-  padding: 8px 10px;
-  border-radius: 4px;
+  padding: 10px 12px;
+  border-radius: 10px;
   border: 1px solid #d1d5db;
   font: inherit;
+  background: #f9fafb;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
   border-color: #2563eb;
-  box-shadow: 0 0 0 1px #2563eb33;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35);
+  background: #ffffff;
 }
 
+/* Botão padronizado com o resto da identidade */
 button {
-  margin-top: 8px;
-  padding: 10px 16px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 999px;
   background: #2563eb;
   color: #ffffff;
   font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    filter 0.12s ease;
 }
 
 button:hover {
   background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+  filter: brightness(1.03);
 }
 
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Mensagem de feedback */
 .feedback {
   margin-top: 12px;
   font-size: 0.9rem;
@@ -78,4 +132,13 @@ button:hover {
 
 .feedback.error {
   color: #dc2626;
+}
+
+/* Rodapé opcional (se tiver) */
+.footer {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
 }
