@@ -87,24 +87,33 @@ textarea:focus {
   box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
 }
 
-/* Botão */
+/* Botão principal do formulário (Projeto 1) */
 button {
   width: 100%;
-  margin-top: 12px;         /* <<< afasta o botão do último campo */
-  padding: 10px 16px;
+  margin-top: 16px;
+  padding: 12px 18px;
   border: none;
   border-radius: 999px;
-  background: #2563eb;
+  background: #2563eb;              /* cor principal azul */
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+  font-size: 0.95rem;
+  transition: transform 0.12s ease,
+              box-shadow 0.12s ease,
+              filter 0.12s ease;
 }
 
 button:hover {
+  background: #1d4ed8;              /* mesmo azul, um tom mais escuro */
   transform: translateY(-1px);
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
   filter: brightness(1.04);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 /* Mensagem de feedback */
@@ -120,24 +129,20 @@ button:hover {
 
 .footer {
   padding: 20px 24px 28px;
-  text-align: center;          /* centraliza tudo */
+  text-align: center;
   font-size: 0.8rem;
   color: #6b7280;
   border-top: 1px solid rgba(148, 163, 184, 0.25);
-  margin-top: 40px;            /* espaço extra antes do rodapé */
+  margin-top: 40px;
 }
 
-/* Nome da empresa destacado */
+/* Destaque para o nome inteiro da empresa */
 .footer-signature {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 4px;
-  color: #e5e7eb;
-  letter-spacing: 0.06em;
+  color: #e5e7eb;        /* mesma cor para "NovaTech" e "Solutions" */
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-
-.footer-signature span {
-  color: #38bdf8;              /* destaca “Solutions” */
 }
 }
