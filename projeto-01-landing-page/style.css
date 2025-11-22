@@ -138,10 +138,10 @@ button:active {
 
 /* Destaque para o nome inteiro da empresa */
 .footer-signature {
-  font-size: 1.1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 700;
   margin-bottom: 4px;
-  color: #000;        /* mesma cor para "NovaTech" e "Solutions" */
+  color: #111827;        /* mesma cor para "NovaTech" e "Solutions" */
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
