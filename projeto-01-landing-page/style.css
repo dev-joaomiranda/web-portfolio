@@ -141,7 +141,7 @@ button:active {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 4px;
-  color: #e5e7eb;        /* mesma cor para "NovaTech" e "Solutions" */
+  color: #000;        /* mesma cor para "NovaTech" e "Solutions" */
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
