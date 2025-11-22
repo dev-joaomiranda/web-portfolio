@@ -21,7 +21,7 @@ body {
 
 /* Cabeçalho simples */
 .topbar {
-  padding: 16px 24px;
+  padding: 24px 32px;   /* antes era 16px 24px */
   background: #111827;
   color: #e5e7eb;
 }
